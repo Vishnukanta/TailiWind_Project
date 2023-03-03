@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Montserrat", sans-serif;
+    @apply bg-dark text-white;
+  }
+}
+.btn {
+  @apply flex items-center bg-main active:bg-activeRed rounded-full py-4 px-[66px] justify-between gap-5;
+}
+
+
