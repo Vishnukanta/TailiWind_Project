@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    @apply bg-dark text-white;
+  }
+  a {
+    @apply flex items-center px-[25px];
+  }
+  header {
+    @apply flex justify-between py-[21px] px-[135px];
+  }
+  nav {
+    @apply flex uppercase leading-[20.8px];
+  }
+
+  button {
+    @apply rounded-full;
+  }
+
+  h2 {
+    @apply font-bold uppercase text-[90px];
+  }
+
+  section {
+    @apply px-[135px];
+  }
+  p {
+    @apply font-medium;
+  }
+}
+
+.radial-gradient {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ff304d 0%,
+    rgba(255, 48, 77, 0) 100%
+  );
+  filter: blur(90px);
+}
+
+.relative {
+  position: relative;
+}
+
+.scroll {
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.branding-2 {
+  @apply w-[480px];
+}
+
+.red-text {
+  @apply font-bold text-lightRed leading-[70.4px] text-[64px];
+}
+
